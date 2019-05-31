@@ -18,24 +18,25 @@
       <th>datanasc</th>
       <th>tipo</th>
       <th>senha</th>
-      <th tolspan='1'>Açôes</th>
+      <th tolspan='2'>Açôes</th>
        </tr>";
+
+      /* var_dump ($usuario);*/
        foreach ($usuario as $Usuario) {
 
 
                 echo"<tr>
-                <td> ". $Usuario->id." </td>
-                <td> ". $Usuario->Nome." </td>
-                <td> ". $Usuario->email." </td>
-                <td> ". $Usuario->celular." </td>
-                <td> ". $Usuario->telefone." </td>
-                <td> ". $Usuario->datanasc." </td>
-                <td> ". $Usuario->tipo." </td>
-                <td> ". $Usuario->senha." </td>
-                 <td><a href='editar.php?id=".$Usuario->id."&Nome=".$Usuario->Nome."&Email="
-                 .$Usuario->email."&Celular=".$Usuario->celular."&Telefone=".$Usuario->telefone.
-                 "&Datanasc=".$Usuario->datanasc."&Tipo=".$Usuario->tipo."&Senha=".$Usuario->senha."'>Editar</a></td>
-
+                <td> ". $Usuario ['id']." </td>
+                <td> ". $Usuario['nome']." </td>
+                <td> ". $Usuario['email']." </td>
+                <td> ". $Usuario['celular']." </td>
+                <td> ". $Usuario['telefone']." </td>
+                <td> ". $Usuario['datanasc']." </td>
+                <td> ". $Usuario['tipo']." </td>
+                <td> ". $Usuario['senha']." </td>
+                 <td><a href='editar.php?id=".$Usuario['id']."'>Editar</a></td>
+            
+                
 
                 </tr>";
             }

@@ -31,19 +31,12 @@ class Usuario extends ClassConexao {
     
   public function Listar() {
    
-    $stmt = $this->conexao->prepare("Select From usuario (id,nome,email,celular,telefone,datanasc,tipo,senha)
-     VALUES (:id,:nome, :email, :celular, :telefone, :datanasc, :tipo, :senha)");
-     
-    $stmt->bindParam(':id', $usuario->id);
-    $stmt->bindParam(':nome', $usuario->nome);
-    $stmt->bindParam(':email', $usuario->email);
-    $stmt->bindParam(':celular', $usuario->celular);
-    $stmt->bindParam(':telefone', $usuario->telefone);
-    $stmt->bindParam(':datanasc', $usuario->datanasc);
-    $stmt->bindParam(':tipo', $usuario->tipo);
-    $stmt->bindParam(':senha', $usuario->senha);
+    $stmt = $this->conexao->prepare("Select * from usuario");
+    $stmt->execute();
 
-    return $stmt->execute();
+    $resultado = $stmt->fetchAll();
+
+    return $resultado;
     }
 
 
