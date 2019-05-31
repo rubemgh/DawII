@@ -1,24 +1,28 @@
 <?php
 include_once '../pdo/Usuario.class.php';
-include_once '../pdo/Usuario.php';
+include_once '../pdo/Usuarios.php';
 
-$usuario = new Usuarios($nome,$email,$celular,
-$telefone,$datanasc,$tipo,$senha);
+$usuario = new Usuarios();
 print_r($_POST);
-if($_POST['nome']!="")
+if($_POST['nome']!=""){
   $usuario->nome = $_POST['nome'];
-else
-  header("Location:inserir.php?erro=nome");
-    //echo "Campo nome é obrigatorio";
-
   $usuario->email= $_POST["email"];
   $usuario->celular = $_POST["celular"];
   $usuario->telefone = $_POST["telefone"];
   $usuario->datanasc = $_POST["datanasc"];
   $usuario->tipo = $_POST["tipo"];
   $usuario->senha= $_POST["senha"];
-  $resultado = $usuario->inserir(Usuarios $usuario);
-  if($resultado)
+
+  $banco = new Usuario();
+
+  $resultado = $banco->inserir( $usuario);
+}
+  if($resultado){
   echo"Funcionou";
-else
+ header('location:inserir_usuario.php?add=true');
+  }
+else{
  echo"Não Funcionou";
+ header("Location:inserir_usuario.php?erro=nome");
+    //echo "Campo nome é obrigatorio";
+}

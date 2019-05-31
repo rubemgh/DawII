@@ -16,6 +16,12 @@
             <label>Senha</label> <input type="text" name="senha"></br>
 
             <input type="submit" value="Cadastrar">
+         <?php 
+         if($_GET['add']){
+             echo"<h2>Usuario Inserido</h2>";
+         }
+        ?>
+        
         </form>
     </body>
 </html>

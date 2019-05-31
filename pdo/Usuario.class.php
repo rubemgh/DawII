@@ -1,22 +1,28 @@
 <?php
 
-include_once 'Usuario.php';
+include_once 'Usuarios.php';
 include_once 'Conexao.php';
 
 class Usuario extends ClassConexao {
      public $table = 'usuario';
+     protected $conexao = null;
 
-    public function inserir(Usuarios $usuario) {
+     public function __construct(){
+         $this->conexao = $this->conectaDB();
+         
+     }
+    public function inserir( $usuario) {
         $stmt = $this->conexao->prepare("INSERT INTO usuario (nome,email,celular,telefone,datanasc,tipo,senha)
         VALUES (:nome, :email, :celular, :telefone, :datanasc, :tipo, :senha)");
-
-        $stmt->bindValue(':nome', $usuario->getnome());
-        $stmt->bindValue(':email', $usuario->getemail());
-        $stmt->bindValue(':celular', $usuario->getcelular());
-        $stmt->bindValue(':telefone', $usuario->gettelefone());
-        $stmt->bindValue(':datanasc', $usuario->getdatanasc());
-        $stmt->bindValue(':tipo', $usuario->gettipo());
-        $stmt->bindValue(':senha', $usuario->getsenha());
+        
+        
+        $stmt->bindParam(':nome', $usuario->nome);
+        $stmt->bindParam(':email', $usuario->email);
+        $stmt->bindParam(':celular', $usuario->celular);
+        $stmt->bindParam(':telefone', $usuario->telefone);
+        $stmt->bindParam(':datanasc', $usuario->datanasc);
+        $stmt->bindParam(':tipo', $usuario->tipo);
+        $stmt->bindParam(':senha', $usuario->senha);
 
         return $stmt->execute();
         //INSERT INTO usuario (username, pws, email) VALUES ('teste', '123', 'geisonq@gmail.com', 1);
