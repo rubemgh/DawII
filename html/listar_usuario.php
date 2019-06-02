@@ -2,6 +2,8 @@
         <?php
        include_once '../pdo/Usuario.class.php';
        include_once '../pdo/Usuarios.php';
+
+       
          $conexao = new Usuario();
          $usuario = $conexao->Listar();
 
@@ -34,8 +36,8 @@
                 <td> ". $Usuario['datanasc']." </td>
                 <td> ". $Usuario['tipo']." </td>
                 <td> ". $Usuario['senha']." </td>
-                 <td><a href='editar.php?id=".$Usuario['id']."'>Editar</a></td>
-            
+                 <td><a href='../html/editar_usuario.php?id=".$Usuario['id']."'>Editar</a></td>
+                 <td><a href='../html/apagar_usuario.php?id=".$Usuario['id']."'>Eliminar</a></td>
                 
 
                 </tr>";

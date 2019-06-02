@@ -15,7 +15,7 @@ class Usuario extends ClassConexao {
         $stmt = $this->conexao->prepare("INSERT INTO usuario (nome,email,celular,telefone,datanasc,tipo,senha)
         VALUES (:nome, :email, :celular, :telefone, :datanasc, :tipo, :senha)");
         
-        
+     
         $stmt->bindParam(':nome', $usuario->nome);
         $stmt->bindParam(':email', $usuario->email);
         $stmt->bindParam(':celular', $usuario->celular);
@@ -29,7 +29,7 @@ class Usuario extends ClassConexao {
 
     }
     
-  public function Listar() {
+     public function Listar() {
    
     $stmt = $this->conexao->prepare("Select * from usuario");
     $stmt->execute();
@@ -38,6 +38,34 @@ class Usuario extends ClassConexao {
 
     return $resultado;
     }
-
-
-}
+    public function apagar() {
+   
+        $stmt = $this->conexao->prepare("Delete FROM usuario WHERE id = $this->id");
+        $stmt->execute();
+    
+        $resultado = $stmt->fetchAll();
+    
+        return $resultado;
+        }
+    public function editar(){
+   
+            $stmt = $this->conexao->prepare('UPDATE usuario SET nome = :nome,email= :email,
+            celular= :celular,telefone = :telefone,datanasc = :datanasc,tipo = :tipo,senha = :senha 
+            where id= :id');
+               $stmt->bindParam(':id', $usuario->id);
+               $stmt->bindParam(':nome', $usuario->nome);
+               $stmt->bindParam(':email', $usuario->email);
+               $stmt->bindParam(':celular', $usuario->celular);
+               $stmt->bindParam(':telefone', $usuario->telefone);
+               $stmt->bindParam(':datanasc', $usuario->datanasc);
+               $stmt->bindParam(':tipo', $usuario->tipo);
+               $stmt->bindParam(':senha', $usuario->senha);
+     
+          $stmt->execute();
+           
+         $resultado = $stmt->fetchAll();
+        
+            return $resultado;
+           
+        } 
+    }
