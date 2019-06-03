@@ -6,6 +6,7 @@ $usuario = new Usuarios();
 
 print_r($_POST);
 if($_POST['nome']!=""){
+  $usuario->id = $_POST['id'];
   $usuario->nome = $_POST['nome'];
   $usuario->email= $_POST["email"];
   $usuario->celular = $_POST["celular"];
@@ -16,7 +17,7 @@ if($_POST['nome']!=""){
 
   $banco = new Usuario();
 
-  $resultado = $banco->editar();
+  $resultado = $banco->editar($usuario);
 }
 if($resultado){
         echo"editado com sucesso";

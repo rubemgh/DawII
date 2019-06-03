@@ -38,6 +38,15 @@ class Usuario extends ClassConexao {
 
     return $resultado;
     }
+    public function Listarnome($nome) {
+   
+        $stmt = $this->conexao->prepare("Select * from usuario where nome= $nome");
+        $stmt->execute();
+    
+        $resultado = $stmt->fetchAll();
+    
+        return $resultado;
+        }
     public function apagar() {
    
         $stmt = $this->conexao->prepare("Delete FROM usuario WHERE id = $this->id");
@@ -47,23 +56,23 @@ class Usuario extends ClassConexao {
     
         return $resultado;
         }
-    public function editar(){
-   
+    public function editar($usuario){
+          
             $stmt = $this->conexao->prepare('UPDATE usuario SET nome = :nome,email= :email,
             celular= :celular,telefone = :telefone,datanasc = :datanasc,tipo = :tipo,senha = :senha 
             where id= :id');
-               $stmt->bindParam(':id', $usuario->id);
-               $stmt->bindParam(':nome', $usuario->nome);
-               $stmt->bindParam(':email', $usuario->email);
-               $stmt->bindParam(':celular', $usuario->celular);
-               $stmt->bindParam(':telefone', $usuario->telefone);
-               $stmt->bindParam(':datanasc', $usuario->datanasc);
-               $stmt->bindParam(':tipo', $usuario->tipo);
-               $stmt->bindParam(':senha', $usuario->senha);
+               $stmt->bindValue(':id', $usuario->id);
+               $stmt->bindValue(':nome', $usuario->nome);
+               $stmt->bindValue(':email', $usuario->email);
+               $stmt->bindValue(':celular', $usuario->celular);
+               $stmt->bindValue(':telefone', $usuario->telefone);
+               $stmt->bindValue(':datanasc', $usuario->datanasc);
+               $stmt->bindValue(':tipo', $usuario->tipo);
+               $stmt->bindValue(':senha', $usuario->senha);
      
-          $stmt->execute();
+          $resultado = $stmt->execute();
            
-         $resultado = $stmt->fetchAll();
+         /*$resultado = $stmt->fetchAll();*/
         
             return $resultado;
            
