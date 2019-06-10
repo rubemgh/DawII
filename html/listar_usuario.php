@@ -1,20 +1,20 @@
-<!--<form action="listar_usuario.php">
+<form action="listar_usuario.php">
    Buscar:<input type="text" name="buscar"/>
  <input type="submit"/>
-</form>-->
+</form>
 
 
         <?php
        include_once '../pdo/Usuario.class.php';
        include_once '../pdo/Usuarios.php';
         
-     /* if (isset($_POST['buscar'])){
+      if (isset($_GET['buscar'])){
          $conexao = new Usuario();
-         $usuario = $conexao->Listarnome($_POST['buscar']);
-       }else{*/
+         $usuario = $conexao->Listarnome($_GET['buscar']);
+       }else{
          $conexao = new Usuario();
          $usuario = $conexao->Listar();
-      /* }*/
+      }
 
       
 

@@ -40,13 +40,13 @@ class Usuario extends ClassConexao {
     }
     public function Listarnome($nome) {
    
-        $stmt = $this->conexao->prepare("Select * from usuario where nome= $nome");
+        $stmt = $this->conexao->prepare("Select * from usuario where nome LIKE '%$nome%'");
         $stmt->execute();
     
         $resultado = $stmt->fetchAll();
-    
+
         return $resultado;
-        }
+    }
     public function apagar() {
    
         $stmt = $this->conexao->prepare("Delete FROM usuario WHERE id = $this->id");
