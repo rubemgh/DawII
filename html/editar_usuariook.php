@@ -23,6 +23,6 @@ if($resultado){
         echo"editado com sucesso";
 }
  else{
-	 echo"Categoria não pode ser editada";
+	 echo"Usuario não pode ser editado";
   }
   ?>
