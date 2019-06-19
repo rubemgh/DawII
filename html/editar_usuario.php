@@ -1,10 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
+<?php 
+    include_once "topo.php";
+?>
+ <div class="divposicao">
         <title>Editar de Usuário</title>
         <meta charset="utf-8">
     </head>
-    <body>
+  
         <h1>Editar Usuário</h1>
         <form action="editar_usuariook.php" method="post"> 
             <label>id</label><input type="text" name="id"  value = <?php echo $_GET['id']?>></br>
@@ -26,5 +27,7 @@
       
         
         </form>
-    </body>
-</html>
+        </div>
+<?php
+    include_once "rodape.php";
+?>

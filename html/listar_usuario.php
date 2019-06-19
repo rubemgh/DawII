@@ -1,9 +1,18 @@
+<?php 
+    include_once "topo.php";
+?>
+
+<div class="divposicao">
 <form action="listar_usuario.php">
    Buscar:<input type="text" name="buscar"/>
  <input type="submit"/>
 </form>
-
-
+<style>
+#tables {
+        width: 100%;    
+        background-color:#D9BD6A;
+      }
+</style>
         <?php
        include_once '../pdo/Usuario.class.php';
        include_once '../pdo/Usuarios.php';
@@ -19,7 +28,7 @@
       
 
 
-      echo "<table style='width:50%' border>";
+      echo "<table style='width:50%' border id='tables'>";
       echo"<tr>
        <th>id </th>
       <th>Nome </th>
@@ -55,3 +64,7 @@
      echo"</table>";
    
         ?>
+        </div>
+ <?php
+    include_once "rodape.php";
+?>

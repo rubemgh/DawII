@@ -2,12 +2,12 @@
     include_once "topo.php";
 ?>
 <div class="divposicao">
-        <title>Cadastro de Usuário</title>
+        <title>Cadastro de Funcionario</title>
         <meta charset="utf-8">
     </head>
     <body>
-        <h1 style="background-color:black;color:#F2CD13;">Cadastro de Categoria</h1>
-        <form action="inserir_categoriaok.php" method="post" style="border:2px solid black;background-color:#F2CD13;">
+        <h1 style="background-color:black;color:#F2CD13;">Cadastro de Funcionario</h1>
+        <form action="inserir_funcionariook.php" method="post" style="border:2px solid black;background-color:#F2CD13;">
             <label>Nome</label> <input type="text" name="nome"></br>
         
 

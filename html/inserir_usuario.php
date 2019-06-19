@@ -1,12 +1,11 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Cadastro de Usuário</title>
-        <meta charset="utf-8">
-    </head>
-    <body>
-        <h1>Cadastro de Usuário</h1>
-        <form action="inserir_usuariook.php" method="post">
+<?php 
+    include_once "topo.php";
+?>
+
+        <div class="divposicao">
+        <h1 style="background-color:black;color:#F2CD13;">Cadastro de Usuário</h1>
+        
+        <form action="inserir_usuariook.php" method="post" style="border:2px solid black;background-color:#F2CD13;">
             <label>Nome</label> <input type="text" name="nome"></br>
             <label>E-mail</label> <input type="email" name="email"></br>
             <label>Celular</label> <input type="text" name="celular"></br>
@@ -23,5 +22,19 @@
         ?>
         
         </form>
-    </body>
-</html>
+        </div>       
+ <?php
+    include_once "rodape.php";
+?>
+
+
+
+
+
+
+
+
+
+
+
+      
