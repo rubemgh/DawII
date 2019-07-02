@@ -38,8 +38,8 @@
                     <li><a href="listar_categoria.php">Listar</a></li>
              </ul></li>
                 <li><a href="#">Servicio</a><ul>
-                    <li><a href="#">Inserir</a></li>
-                    <li><a href="#">Listar</a></li>
+                    <li><a href="inserir_servico.php">Inserir</a></li>
+                    <li><a href="listar_servico.php">Listar</a></li>
                  </ul></li>
                  <li><a href="#">Funcionario</a><ul>
                     <li><a href="inserir_funcionario.php">Inserir</a></li>
