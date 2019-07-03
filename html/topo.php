@@ -25,7 +25,7 @@
         </div>
    
          
-          <nav>  
+          <nav class="divtamanho1">  
             <div class="divtamanho">
             <ul>
                 <li><a href="#">Usuario</a><ul>

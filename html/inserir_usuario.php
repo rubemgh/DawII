@@ -1,7 +1,11 @@
 <?php 
     include_once "topo.php";
 ?>
-
+       <style>
+     .divtamanho1{
+        height:1800px;   
+        }
+        </Style>
         <div class="divposicao">
         <h1 style="background-color:black;color:#F2CD13;">Cadastro de Usuário</h1>
         

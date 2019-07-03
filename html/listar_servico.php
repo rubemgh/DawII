@@ -12,6 +12,11 @@
         width: 100%;    
         background-color:#D9BD6A;
       }
+.divtamanho1{
+   
+    height:1800px;   
+}
+
 </style>
         <?php
        include_once '../pdo/Servico.class.php';
