@@ -1,3 +1,12 @@
+ <?php
+  session_start();
+
+  if(!isset($_SESSION['loginADM'])){
+      header("Location:../html/login.php");
+  }
+ 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +34,7 @@
         </div>
    
          
-          <nav class="divtamanho1">  
+          <nav >  
             <div class="divtamanho">
             <ul>
                 <li><a href="#">Usuario</a><ul>
@@ -46,14 +55,14 @@
                     <li><a href="listar_funcionario.php">Listar</a></li>
                  </ul></li>
                  <li><a href="#">Vendas</a><ul>
-                    <li><a href="#">Inserir</a></li>
-                    <li><a href="#">Listar</a></li>
+                    <li><a href="inserir_vendas.php">Inserir</a></li>
+                    <li><a href="listar_vendas.php">Listar</a></li>
                  </ul></li>
                  <li><a href="#">Vendas_Func_Serv</a><ul>
-                    <li><a href="#">Inserir</a></li>
-                    <li><a href="#">Listar</a></li>
+                    <li><a href="inserir_venda_func_serv.php">Inserir</a></li>
+                    <li><a href="listar_venda_func_serv.php">Listar</a></li>
                  </ul></li>
-                 <li><a href="#">Sair</a></li>
+                 <li><a href="sair.php">Sair</a></li>
                
                
             </ul> 

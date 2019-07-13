@@ -12,7 +12,7 @@
         width: 100%;    
         background-color:#D9BD6A;
       }
-.divtamanho1{
+.divtamanho{
    
     height:1800px;   
 }

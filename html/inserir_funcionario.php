@@ -1,11 +1,7 @@
 <?php 
     include_once "topo.php";
 ?>
-  <style>
-     .divtamanho1{
-        height:1800px;   
-        }
-        </Style>
+
 <div class="divposicao">
         <title>Cadastro de Funcionario</title>
         <meta charset="utf-8">

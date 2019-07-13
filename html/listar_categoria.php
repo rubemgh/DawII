@@ -1,11 +1,7 @@
 <?php 
     include_once "topo.php";
 ?>
-  <style>
-     .divtamanho1{
-        height:1800px;   
-        }
-        </Style>
+  
 <div class="divposicao">
 <form action="listar_categoria.php">
    Buscar:<input type="text" name="buscar"/>

@@ -11,6 +11,7 @@ class Usuario extends ClassConexao {
          $this->conexao = $this->conectaDB();
          
      }
+    
     public function inserir( $usuario) {
         $stmt = $this->conexao->prepare("INSERT INTO usuario (nome,email,celular,telefone,datanasc,tipo,senha)
         VALUES (:nome, :email, :celular, :telefone, :datanasc, :tipo, :senha)");
@@ -77,4 +78,16 @@ class Usuario extends ClassConexao {
             return $resultado;
            
         } 
+        public function login($usuario){
+            $stmt = $this->conexao->prepare("Select * from  usuario Where 
+            email = :email and senha = :senha");
+         
+            $stmt->bindParam(':email', $usuario->email);
+            $stmt->bindParam(':senha', $usuario->senha);
+            $stmt->execute();
+
+            $resultado = $stmt->fetchAll();
+        
+            return $resultado;
+        }
     }

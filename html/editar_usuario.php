@@ -6,8 +6,8 @@
         <meta charset="utf-8">
     </head>
   
-        <h1>Editar Usuário</h1>
-        <form action="editar_usuariook.php" method="post"> 
+        <h1 style="background-color:black;color:#F2CD13;">Editar Usuário</h1>
+        <form action="editar_usuariook.php" method="post" style="border:2px solid black;background-color:#F2CD13;"> 
             <label>id</label><input type="text" name="id"  value = <?php echo $_GET['id']?>></br>
             <label>Nome</label> <input type="text" name="nome" value = <?php echo $_GET['nome']?>></br>
             <label>E-mail</label> <input type="email" name="email" value = <?php echo $_GET['email']?>></br>

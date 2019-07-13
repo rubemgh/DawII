@@ -2,12 +2,12 @@
     include_once "topo.php";
 ?>
  <div class="divposicao">
-        <title>Editar de Usuário</title>
+        <title>Editar de Serviço</title>
         <meta charset="utf-8">
     </head>
   
-        <h1>Editar Usuário</h1>
-        <form action="editar_servicook.php" method="post"> 
+        <h1 style="background-color:black;color:#F2CD13;">Editar Serviço</h1>
+        <form action="editar_servicook.php" method="post" style="border:2px solid black;background-color:#F2CD13;"> 
             <label>id</label><input type="text" name="id"  value = <?php echo $_GET['id']?>></br>
             <label>Nome</label> <input type="text" name="nome" value = <?php echo $_GET['nome']?>></br>
             <label>preco</label> <input type="preco" name="preco" value = <?php echo $_GET['preco']?>></br>
