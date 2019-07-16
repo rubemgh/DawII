@@ -17,5 +17,5 @@ echo"Venda_Func_Serv não pode ser excluida";
 else
 echo"Excluido com sucesso";
 ?>
-<button onclick='window.location.href= "listar_usuario.php"'> Voltar para lista</button>
+<button onclick='window.location.href= "listar_venda_func_serv.php"'> Voltar para lista</button>
 

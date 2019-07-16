@@ -13,7 +13,7 @@
             <label>Id_vendas</label> <input type="text" name="id_vendas" value = <?php echo $_GET['id_vendas']?>></br>
             <label>Id_funcionario</label> <input type="text" name="id_funcionario" value = <?php echo $_GET['id_funcionario']?>></br>
             <label>Id_Serv</label> <input type="text" name="id_serv" value = <?php echo $_GET['id_serv']?>></br>
-            <label>Velor</label> <input type="text" name="valor" value = <?php echo $_GET['valor']?>></br>
+            <label>Valor</label> <input type="text" name="valor" value = <?php echo $_GET['valor']?>></br>
       
 
             <input type="submit" value="editar">

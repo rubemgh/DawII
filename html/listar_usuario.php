@@ -2,16 +2,20 @@
     include_once "topo.php";
 ?>
   
-<div class="divposicao">
+<div class="divposicao" style='left:15%'>
 <form action="listar_usuario.php">
    Buscar:<input type="text" name="buscar"/>
  <input type="submit"/>
 </form>
 <style>
 #tables {
+      
         width: 100%;    
         background-color:#D9BD6A;
+        margin-top: 25px;
+       
       }
+      
 </style>
         <?php
        include_once '../pdo/Usuario.class.php';

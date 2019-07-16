@@ -2,20 +2,22 @@
     include_once "topo.php";
 ?>
 
-<div class="divposicao">
+<div class="divposicao" >
 <form action="listar_servico.php">
    Buscar:<input type="text" name="buscar"/>
  <input type="submit"/>
 </form>
 <style>
 #tables {
-        width: 100%;    
+        width: 100%; 
+         
         background-color:#D9BD6A;
       }
 .divtamanho{
-   
+
     height:1800px;   
 }
+
 
 </style>
         <?php
@@ -42,7 +44,7 @@
       <th>imagem </th>
       <th tolspan='2'>Açôes</th>
        </tr>";
-
+      
       /* var_dump ($usuario);*/
        foreach ($servico as $Servico) {
 

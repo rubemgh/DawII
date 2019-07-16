@@ -14,7 +14,7 @@
             <label>Id_Vendas</label> <input type="text" name="id_vendas"></br>
             <label>Id_Funcionario</label> <input type="text" name="id_funcionario"></br>
             <label>Id_Serv</label> <input type="text" name="id_serv"></br>
-            <label>Valor</label> <input type="text" name="Valor"></br>
+            <label>Valor</label> <input type="text" name="valor"></br>
            
 
             <input type="submit" value="Cadastrar">
