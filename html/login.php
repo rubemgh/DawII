@@ -1,3 +1,27 @@
+<?php
+session_start();
+
+$n1 = rand(1,20);
+$n2 = rand(1,20);
+$soma = $n1+$n2;
+$_SESSION['loginADM'] = $n1+$n2;
+
+?>
+<script type="text/javascript">
+    function Validar(){
+    var soma = "<?php echo $soma; ?>";
+	var campo = document.getElementById("loginADM").value;
+	if(campo == soma){
+    $_SESSION['loginADM']
+	}else{
+	alert("INCORRETO!");
+	}
+	
+        }
+</script>
+
+
+
 <html>
     <head></head>
     
@@ -11,7 +35,9 @@
       
          <label style='float: none; '>Email</label><input type="text" name="email"/><br><br>
          <label style='float: none;'>Senha</label><input type="password" name="senha"/><br>
-         <br><input type="submit" style='float: none; margin-left:470px;'/>
+         <div style='float: none; margin-left:450px;'>Some: <?php echo "$n1 + $n2 = "; ?></div>
+         <input onblur="Validar()" type="text" name="loginADM" id="loginADM" maxlength="2" required="required" size="2"style='float: none; margin-left:450px;'>
+         <br><input type="submit" style='float: none; margin-left:-300px;'/>
       <br><br>
     </form>
     

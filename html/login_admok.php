@@ -7,6 +7,7 @@
  $sha256 = hash('sha256',$_POST["senha"]);
   $usuario->email = $_POST["email"];
    $usuario->senha = $sha256;
+  
    
    
    $login = $usuario->login($usuario);
@@ -16,6 +17,7 @@
 	   header("Location: ../html/listar_categoria.php");
    }
    else
-	  echo "Não logado";
+      echo "Não logado";
+     
    
    ?>

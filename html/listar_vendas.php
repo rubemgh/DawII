@@ -7,10 +7,16 @@
    Buscar:<input type="text" name="buscar"/>
  <input type="submit"/>
 </form>
+<br>
 <style>
 #tables {
         width: 100%;    
-        background-color:#D9BD6A;
+        background-color:#D9BD6A;   
+      }
+      tr:nth-child(even){background-color: #F2CD13}
+      tr, th {
+  text-align: center;
+  padding: 0px 35px;
       }
 </style>
         <?php
@@ -28,7 +34,7 @@
       
 
 
-      echo "<table style='width:50%' border id='tables'>";
+      echo "<table style='width:50%' id='tables'>";
       echo"<tr>
        <th>id </th>
       <th>quantidade </th>

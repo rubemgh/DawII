@@ -15,7 +15,11 @@
         margin-top: 25px;
        
       }
-      
+   tr:nth-child(even){background-color: #F2CD13}
+      tr, th {
+          text-align: left;
+         padding: 5px;
+         }
 </style>
         <?php
        include_once '../pdo/Usuario.class.php';
@@ -32,7 +36,7 @@
       
 
 
-      echo "<table style='width:50%' border id='tables'>";
+      echo "<table style='width:50%' id='tables'>";
       echo"<tr>
        <th>id </th>
       <th>Nome </th>
