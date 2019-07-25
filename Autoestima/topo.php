@@ -14,7 +14,7 @@
 <body>
 <div id='cssmenu'>
 <ul>
-   <li><a href='#'><span>Home</span></a></li>
+   <li><a href='index.php'><span>Home</span></a></li>
    <li class='active has-sub'><a href='#'><span>Categoria</span></a>
       <ul>
          <li class='has-sub'><a href='#'><span>Cortes</span></a>
