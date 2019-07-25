@@ -37,7 +37,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+   
       <th>Nome </th>
       <th tolspan='2'>Açôes</th>
        </tr>";
@@ -47,7 +47,7 @@
 
 
                 echo"<tr>
-                <td> ". $Categoria ['id']." </td>
+               
                 <td> ". $Categoria['nome']." </td>
         
                  <td><a href='../html/editar_categoria.php?id=".$Categoria['id']. "&nome=".$Categoria['nome']."'>Editar</a></td>

@@ -17,21 +17,29 @@
    <li><a href='#'><span>Home</span></a></li>
    <li class='active has-sub'><a href='#'><span>Categoria</span></a>
       <ul>
-         <li class='has-sub'><a href='#'><span>Product 1</span></a>
+         <li class='has-sub'><a href='#'><span>Cortes</span></a>
             <ul>
-               <li><a href='#'><span>Sub Product</span></a></li>
-               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+               <li><a href='degrade.php'><span>Degrade</span></a></li>
+               <li class='last'><a href='tradicional.php'><span>Tradicional</span></a></li>
             </ul>
          </li>
-         <li class='has-sub'><a href='#'><span>Product 2</span></a>
+         <li class='has-sub'><a href='#'><span>Barbas</span></a>
             <ul>
-               <li><a href='#'><span>Sub Product</span></a></li>
-               <li class='last'><a href='#'><span>Sub Product</span></a></li>
+               <li><a href='barba.php'><span>Barba Personalizada</span></a></li>
+               <li class='last'><a href='sombrancelha.php'><span>Sombrancelha</span></a></li>
             </ul>
          </li>
       </ul>
    </li>
-   <li><a href='#'><span>Serviço</span></a></li>
-   <li class='last'><a href='#'><span>Contact</span></a></li>
-</ul>
+   <li><a href='#'><span>Eventos</span></a></li>
+   <li class='last'><a href='#'><span>Fale com nosco</span></a></li>
+   </ul>
+   <ul class="login">
+   <li class='last'><a href='#'><span>Carrinho</span></a></li>
+    <li class='active has-sub'><a href='#'><span>Minha Conta</span></a>
+      <ul>
+      <li ><a href='#'><span>Login</span></a></li>
+      <li ><a href='#'><span>Registrar</span></a></li>
+         </ul>
+   </ul>
 </div>

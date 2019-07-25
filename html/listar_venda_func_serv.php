@@ -36,7 +36,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+     
       <th>quantidade </th>
       <th>id_vendas</th>
       <th>id_funcionario </th>
@@ -50,7 +50,7 @@
 
 
                 echo"<tr>
-                <td> ". $Venda_Func_Serv ['id']." </td>
+               
                 <td> ". $Venda_Func_Serv['quantidade']." </td>
                 <td> ". $Venda_Func_Serv['id_vendas']." </td>
                 <td> ". $Venda_Func_Serv['id_funcionario']." </td>

@@ -37,7 +37,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+      
       <th>Nome </th>
       <th tolspan='2'>Açôes</th>
        </tr>";
@@ -47,8 +47,7 @@
 
 
                 echo"<tr>
-                <td> ". $Funcionario ['id']." </td>
-                <td> ". $Funcionario['nome']." </td>
+               <td> ". $Funcionario['nome']." </td>
         
                  <td><a href='../html/editar_funcionario.php?id=".$Funcionario['id']. "&nome=".$Funcionario['nome']."'>Editar</a></td>
                  <td><a href='../html/apagar_funcionario.php?id=".$Funcionario['id']."'>Eliminar</a></td>

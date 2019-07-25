@@ -14,7 +14,7 @@ $_SESSION['loginADM'] = $n1+$n2;
 	if(campo == soma){
     $_SESSION['loginADM']
 	}else{
-	alert("INCORRETO!");
+	alert("A SOMA ESTA INCORRETA!");
 	}
 	
         }

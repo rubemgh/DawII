@@ -17,7 +17,8 @@
 	   header("Location: ../html/listar_categoria.php");
    }
    else
-      echo "Não logado";
+     //echo "Não logado";
+     header("Location:login.php?ERRO=senha");
      
    
    ?>

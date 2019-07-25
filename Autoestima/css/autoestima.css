@@ -25,6 +25,18 @@
     color: #ffffff;
    
 }
+.main_slider{
+  padding-top: 70px;
+  padding-left: 100px;
+}
+.Servauto{
+ color:#D9BD6A;
+}
+.login{
+  float: right;
+  margin-top: -43px !important;
+
+}
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 #cssmenu {
   background: #F2CD13;
@@ -39,7 +51,7 @@
 #cssmenu ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0px;
   display: block;
 }
 #cssmenu ul:after,

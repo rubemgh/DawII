@@ -43,7 +43,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+     
       <th>Nome </th>
       <th>preco</th>
       <th>descricao</th>
@@ -56,7 +56,6 @@
 
 
                 echo"<tr>
-                <td> ". $Servico ['id']." </td>
                 <td> ". $Servico['nome']." </td>
                 <td> ". $Servico['preco']." </td>
                 <td> ". $Servico['descricao']." </td>

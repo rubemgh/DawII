@@ -36,7 +36,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+    
       <th>quantidade </th>
       <th>data-venda</th>
       <th>maneira_pagar </th>

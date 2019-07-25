@@ -38,7 +38,7 @@
 
       echo "<table style='width:50%' id='tables'>";
       echo"<tr>
-       <th>id </th>
+     
       <th>Nome </th>
       <th>email</th>
       <th>celular </th>
@@ -54,7 +54,7 @@
 
 
                 echo"<tr>
-                <td> ". $Usuario ['id']." </td>
+               
                 <td> ". $Usuario['nome']." </td>
                 <td> ". $Usuario['email']." </td>
                 <td> ". $Usuario['celular']." </td>

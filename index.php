@@ -1,3 +1,3 @@
 <?php 
- header ("location:html/inserir_usuario.php");
+ header ("location:html/login.php");
  ?>
